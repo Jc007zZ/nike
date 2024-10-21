@@ -20,7 +20,7 @@ Treinar tudo que aprendi até o momento, mais especificamente HTML, CSS e JavaSc
 
 ## 📁 Acesse o projeto
 
-[Clique aqui para ver o projeto em funcionamento](https://nike-website-kevinsilvaa.vercel.app/).
+[Clique aqui para ver o projeto em funcionamento](https://nike-three-omega.vercel.app/).
 
 Neste repositório você poderá ter acesso a todo o projeto que desenvolvi durante esta prática
 
