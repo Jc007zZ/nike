@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    /* *Padding to apply in sections */
+    .padding {
+        @apply py-16 px-8 sm:py-24 sm:px-16;
+    }
+
+    /* *Class to page buttons */
+    .button {
+        @apply flex items-center gap-4 bg-coral-red py-4 px-8 text-lg rounded-full text-white hover:bg-black transition-all duration-500 ease-in-out;
+    }
+    
+    /* *Header navbar */
+    .a-nav {
+        @apply font-montserrat text-lg text-slate-gray leading-normal hover:text-coral-red transition-all ease-in;
+    }
+    .div-mobile {
+        @apply absolute bg-white shadow-3x1 z-20 justify-between gap-2 right-0 flex flex-col mx-2 sm:mx-16 mt-4 text-center w-3/6;
+    }
+    .nav-mobile {
+        @apply border-b-2 text-slate-gray border-slate-gray px-8 py-4 hover:text-black hover:border-black cursor-pointer rounded-lg;
+    }
+    
+    /* *Statistics section in Home */
+    .estatisticas-titulo {
+        @apply font-bold text-5xl font-palanquin;
+    }
+    .estatisticas-texto {
+        @apply mt-2 text-slate-gray;
+    }
+    
+    
+    /* *Shoes to display */
+    .shoes-option {
+        @apply bg-card bg-center bg-cover flex justify-center items-center sm:w-40 sm:h-40 rounded-xl max-sm:p-4;
+    }
+    
+    /* *Popular products cards */
+    .section-cards {
+        @apply mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14;
+    }
+    .cards {
+        @apply flex flex-1 flex-col w-full;
+    }
+    .img-transform {
+        @apply transition-all duration-300 ease-linear hover:scale-125 hover:pb-5;
+    }
+    .card-rating {
+        @apply flex items-center gap-2 mt-8;
+    }
+    .rating-texto {
+        @apply text-xl text-slate-gray;
+    }
+    .shoes-name {
+        @apply mt-2 font-semibold font-palanquin text-2xl;
+    }
+    .shoes-price {
+        @apply text-coral-red font-semibold mt-2;
+    }
+    
+    /* *Information texts */
+    .info-text {
+        @apply text-slate-gray text-lg leading-7;
+    }
+    
+    /* *Benefits card */
+    .card-benefits {
+        @apply flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3x1 px-10 py-16;
+    }
+    .img-benefits {
+        @apply bg-coral-red w-11 h-11 flex justify-center items-center rounded-full;
+    }
+    .title-benefits {
+        @apply font-bold text-3xl font-palanquin mt-5;
+    }
+
+    /* *Newsletter */
+    .input {
+        @apply py-5 pl-4 border border-slate-gray rounded-full w-full outline-none sm:border-none bg-pale-blue placeholder:text-black;
+    }
+
+    /* *Footer */
+    .footer-img {
+        @apply bg-white rounded-full w-12 h-12 flex items-center justify-center cursor-pointer transition-transform duration-300 ease-in-out hover:scale-125 hover:text-white;
+    }
+    .footer-div {
+        @apply flex flex-col gap-8;
+    }
+    .footer-title {
+        @apply text-white text-2xl font-medium;
+    }
+    
+    /* *Help list */
+    .footer-li {
+        @apply text-white-400 hover:text-slate-gray transition-all delay-100 ease-in;
+    }
+
+    /* *Payment methods */
+    .payment-method {
+        @apply bg-white w-12 h-8 flex items-center justify-center;
+    }
+
+}
+
+/* *Remover scrollbar */
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
